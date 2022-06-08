@@ -38,6 +38,9 @@ breads.get('/:id', (req, res) => {
               bread: foundBread
           })
       })
+      .catch(err => {
+        res.send('404')
+      })
 })
 
 // CREATE
